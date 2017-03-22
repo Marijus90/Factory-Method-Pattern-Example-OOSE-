@@ -6,7 +6,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -15,8 +14,6 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-
-    private String DEBUG_TAG = "Debug_end";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,26 +58,21 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.closeDrawers();
                 switch (item.getItemId()) {
                     case R.id.brands:
-                        Log.d(DEBUG_TAG, "Brands");
                         openTemporaryFragment();
                         displayShortToast("Brands clicked");
                         return true;
                     case R.id.clothing:
                         openTemporaryFragment();
-                        displayShortToast("Clothing clicked");
                         return true;
                     case R.id.latest:
-                        Log.d(DEBUG_TAG, "Latest");
                         openTemporaryFragment();
                         displayShortToast("Latest clicked");
                         return true;
                     case R.id.login:
-                        Log.d(DEBUG_TAG, "Login");
                         openTemporaryFragment();
                         displayShortToast("Login clicked");
                         return true;
                     case R.id.logout:
-                        Log.d(DEBUG_TAG, "Logout");
                         openTemporaryFragment();
                         displayShortToast("Logout clicked");
                         return true;

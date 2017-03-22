@@ -13,10 +13,10 @@
         android:gravity="left"
         android:paddingBottom="8dp"
         android:paddingLeft="16dp"
-        android:text="Brands"
-        android:textColor="#FFFFFF"
+        android:text="@string/drawer"
+        android:textColor="@color/colorWhite"
         android:textSize="14sp"
-        android:textStyle="bold"	/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/details"
@@ -26,9 +26,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="16dp"
         android:gravity="left"
-        android:paddingLeft="16dp"
-        android:text="Clothing"
-        android:textColor="#FFFFFF"
-        android:textSize="14sp"	/>
+        android:paddingLeft="18dp"
+        android:text="@string/pick_page"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
 
 </RelativeLayout>

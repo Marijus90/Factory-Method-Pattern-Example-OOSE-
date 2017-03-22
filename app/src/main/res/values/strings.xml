@@ -9,4 +9,6 @@
     <string name="logout">Logout</string>
     <string name="openDrawer">Open</string>
     <string name="closeDrawer">Close</string>
+    <string name="drawer">Navigation Drawer</string>
+    <string name="pick_page">Tap to open a page</string>
 </resources>
