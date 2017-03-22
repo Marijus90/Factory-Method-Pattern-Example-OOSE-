@@ -11,16 +11,26 @@ tools:context="com.example.marijus.enduiprototype.MainActivity">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar"	/>
+        layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/info_header"
+        layout="@layout/info_header" />
+
+
+
+    <include
+        android:id="@+id/info_footer"
+        layout="@layout/info_footer" />
 
     <FrameLayout
         android:id="@+id/fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" >
     </FrameLayout>
 
 </LinearLayout>
@@ -30,7 +40,7 @@ tools:context="com.example.marijus.enduiprototype.MainActivity">
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:layout_gravity="start"
-    app:headerLayout="@layout/header"
-    app:menu="@menu/menu_drawer"	/>
+    app:headerLayout="@layout/fragment_header"
+    app:menu="@menu/menu_drawer" />
 
 </android.support.v4.widget.DrawerLayout>
