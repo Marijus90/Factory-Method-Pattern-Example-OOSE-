@@ -13,8 +13,8 @@ public class GymTrainers extends PlaceholderProduct implements Product {
     }
 
     @Override
-    public int getPrice() {
-        return 80;
+    public String getPrice() {
+        return "£80";
     }
 
     @Override

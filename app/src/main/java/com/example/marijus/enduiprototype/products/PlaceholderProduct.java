@@ -6,12 +6,12 @@ package com.example.marijus.enduiprototype.products;
 
 public abstract class PlaceholderProduct implements Product {
     private String name;
-    private int price;
+    private String price;
     private int image;
 
     public PlaceholderProduct(){}
 
     public abstract String getName();
-    public abstract int getPrice();
+    public abstract String getPrice();
     public abstract int getImage();
 }

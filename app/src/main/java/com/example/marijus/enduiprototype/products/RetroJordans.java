@@ -13,8 +13,8 @@ public class RetroJordans extends PlaceholderProduct implements Product{
     }
 
     @Override
-    public int getPrice() {
-        return 100;
+    public String getPrice() {
+        return "£100";
     }
 
     @Override

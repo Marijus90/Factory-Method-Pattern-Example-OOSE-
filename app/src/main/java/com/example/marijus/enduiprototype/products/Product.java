@@ -6,6 +6,6 @@ package com.example.marijus.enduiprototype.products;
 
 public interface Product {
     String getName();
-    int getPrice();
+    String getPrice();
     int getImage();
 }
