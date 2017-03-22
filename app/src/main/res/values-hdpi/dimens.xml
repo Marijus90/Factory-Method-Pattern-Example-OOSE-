@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="header_height">192dp</dimen>
+    <dimen name="header_height">190dp</dimen>
+
+    <dimen name="info_footer_height">72dp</dimen>
+    <dimen name="info_header_height">72dp</dimen>
+
+    <dimen name="item_padding_right">0dp</dimen>
+    <dimen name="item_padding_left">0dp</dimen>
+
+    <dimen name="info_header_large_text">32dp</dimen>
+    <dimen name="info_header_medium_text">14dp</dimen>
+    <dimen name="info_footer_large_text">32dp</dimen>
+    <dimen name="info_footer_medium_text">32dp</dimen>
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
@@ -16,4 +27,6 @@
     <dimen name="fab_marginEnd">16dp</dimen>
     <dimen name="dialog_title_height">128dp</dimen>
     <dimen name="dialog_message_padding">24dp</dimen>
+    <dimen name="nav_drawer_header_text_size">14sp</dimen>
+
 </resources>

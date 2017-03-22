@@ -2,20 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="72dp"
+    android:layout_height="@dimen/info_footer_height"
     android:background="@color/colorBlack" >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="6dp"
-        android:textSize="32dp"
+        android:paddingTop="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:textSize="@dimen/info_footer_large_text"
         android:textColor="@color/colorWhite"
         android:text="COMPANY X"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="14dp"
+        android:paddingLeft="6dp"
+        android:textSize="@dimen/info_footer_medium_text"
         android:textColor="@color/colorWhite"
         android:text="Contact us by email or phone"/>
 
