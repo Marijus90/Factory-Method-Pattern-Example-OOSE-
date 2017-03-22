@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">END UI Prototype</string>
+    <string name="search">Search</string>
+    <string name="shopping_cart">Shopping cart</string>
+    <string name="latest">Latest</string>
+    <string name="brands">Brands</string>
+    <string name="clothing">Clothing</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
+    <string name="drawer">Navigation Drawer</string>
+    <string name="pick_page">Tap to open a page</string>
 </resources>
