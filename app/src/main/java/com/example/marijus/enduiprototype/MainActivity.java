@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        drawerLayout.setDrawerListener(toggle);
+        drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
     }
 
