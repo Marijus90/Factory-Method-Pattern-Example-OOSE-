@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         displayDrawerLayout(toolbar, drawerLayout);
         setupDrawerLayoutNavigationView(drawerLayout);
-
     }
 
     private void displayDrawerLayout(Toolbar toolbar, DrawerLayout drawerLayout) {
@@ -55,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
     private void setupDrawerLayoutNavigationView(final DrawerLayout drawerLayout) {
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+        navigationView.setNavigationItemSelectedListener
+                (new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 drawerLayout.closeDrawers();
@@ -65,16 +65,21 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Brands", Toast.LENGTH_SHORT).show();
                         return true;
                     case R.id.clothing:
-                        Log.d(DEBUG_TAG, "Clothing");
+                        ContentFragment fragment = new ContentFragment();
+                        android.support.v4.app.FragmentTransaction transaction =
+                                getSupportFragmentManager().beginTransaction();
+                        transaction.replace(R.id.fragment, fragment);
+                        transaction.addToBackStack(null);
+                        transaction.commit();
                         return true;
                     case R.id.latest:
                         Log.d(DEBUG_TAG, "Latest");
                         return true;
                     case R.id.login:
-                        Log.d(DEBUG_TAG, "Clothing");
+                        Log.d(DEBUG_TAG, "Login");
                         return true;
                     case R.id.logout:
-                        Log.d(DEBUG_TAG, "Clothing");
+                        Log.d(DEBUG_TAG, "Logout");
                         return true;
                     default:
                         return true;
