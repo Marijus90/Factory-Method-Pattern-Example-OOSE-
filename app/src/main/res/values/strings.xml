@@ -2,4 +2,11 @@
     <string name="app_name">END UI Prototype</string>
     <string name="search">Search</string>
     <string name="shopping_cart">Shopping cart</string>
+    <string name="latest">Latest</string>
+    <string name="brands">Brands</string>
+    <string name="clothing">Clothing</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
 </resources>
