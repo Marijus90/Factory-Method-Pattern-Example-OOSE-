@@ -62,30 +62,46 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.brands:
                         Log.d(DEBUG_TAG, "Brands");
-                        Toast.makeText(MainActivity.this, "Brands", Toast.LENGTH_SHORT).show();
+                        openTemporaryFragment();
+                        displayShortToast("Brands clicked");
                         return true;
                     case R.id.clothing:
+                        openTemporaryFragment();
+                        displayShortToast("Clothing clicked");
+                        return true;
+                    case R.id.latest:
+                        Log.d(DEBUG_TAG, "Latest");
+                        openTemporaryFragment();
+                        displayShortToast("Latest clicked");
+                        return true;
+                    case R.id.login:
+                        Log.d(DEBUG_TAG, "Login");
+                        openTemporaryFragment();
+                        displayShortToast("Login clicked");
+                        return true;
+                    case R.id.logout:
+                        Log.d(DEBUG_TAG, "Logout");
+                        openTemporaryFragment();
+                        displayShortToast("Logout clicked");
+                        return true;
+                    default:
+                        return true;
+                }
+            }
+
+                    private void displayShortToast(String text) {
+                        Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
+                    }
+
+                    private void openTemporaryFragment() {
                         ContentFragment fragment = new ContentFragment();
                         android.support.v4.app.FragmentTransaction transaction =
                                 getSupportFragmentManager().beginTransaction();
                         transaction.replace(R.id.fragment, fragment);
                         transaction.addToBackStack(null);
                         transaction.commit();
-                        return true;
-                    case R.id.latest:
-                        Log.d(DEBUG_TAG, "Latest");
-                        return true;
-                    case R.id.login:
-                        Log.d(DEBUG_TAG, "Login");
-                        return true;
-                    case R.id.logout:
-                        Log.d(DEBUG_TAG, "Logout");
-                        return true;
-                    default:
-                        return true;
-                }
-            }
-        });
+                    }
+                });
     }
 
     @Override
