@@ -5,6 +5,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -12,9 +14,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.marijus.enduiprototype.adapters.DataAdapter;
+import com.example.marijus.enduiprototype.products.GymTrainers;
+import com.example.marijus.enduiprototype.products.PlaceholderProduct;
+import com.example.marijus.enduiprototype.products.RetroJordans;
+
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
 
+    RecyclerView recyclerView;
+    DataAdapter adapter;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +41,23 @@ public class MainActivity extends AppCompatActivity {
         DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         displayDrawerLayout(toolbar, drawerLayout);
         setupDrawerLayoutNavigationView(drawerLayout);
+
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        List<PlaceholderProduct> products = buildProductList();
+        adapter = new DataAdapter(products);
+
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        recyclerView.setAdapter(adapter);
+        recyclerView.setHasFixedSize(true);
+    }
+
+    private List<PlaceholderProduct> buildProductList() {
+        ArrayList<PlaceholderProduct> products = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            products.add(new RetroJordans());
+            products.add(new GymTrainers());
+        }
+        return products;
     }
 
     private void displayDrawerLayout(Toolbar toolbar, DrawerLayout drawerLayout) {
