@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">END UI Prototype</string>
+    <string name="search">Search</string>
+    <string name="shopping_cart">Shopping cart</string>
 </resources>
