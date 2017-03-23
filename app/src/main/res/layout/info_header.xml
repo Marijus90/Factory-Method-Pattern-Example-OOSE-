@@ -13,7 +13,7 @@
         android:paddingRight="6dp"
         android:textSize="@dimen/info_header_large_text"
         android:textColor="@color/colorWhite"
-        android:text="NEW THIS WEEK"/>
+        android:text="@string/info_header_title"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         android:padding="6dp"
         android:textSize="@dimen/info_header_medium_text"
         android:textColor="@color/colorWhite"
-        android:text="FILTER"/>
+        android:text="@string/info_header_filter"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -32,6 +32,6 @@
         android:padding="6dp"
         android:textSize="@dimen/info_header_medium_text"
         android:textColor="@color/colorWhite"
-        android:text="SORT" />
+        android:text="@string/info_header_sort" />
 
 </RelativeLayout>

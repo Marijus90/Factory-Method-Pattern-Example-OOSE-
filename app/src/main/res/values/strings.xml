@@ -11,4 +11,9 @@
     <string name="closeDrawer">Close</string>
     <string name="drawer">Navigation Drawer</string>
     <string name="pick_page">Tap to open a page</string>
+    <string name="company_name">COMPANY X</string>
+    <string name="info_header_title">NEW THIS WEEK</string>
+    <string name="info_header_filter">FILTER</string>
+    <string name="info_header_sort">SORT</string>
+    <string name="fragment_placeholder_text">New fragment created</string>
 </resources>

@@ -13,7 +13,7 @@
         android:paddingRight="6dp"
         android:textSize="@dimen/info_footer_large_text"
         android:textColor="@color/colorWhite"
-        android:text="COMPANY X"/>
+        android:text="@string/company_name"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
