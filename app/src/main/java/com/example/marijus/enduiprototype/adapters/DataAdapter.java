@@ -1,7 +1,6 @@
 package com.example.marijus.enduiprototype.adapters;
 
 import android.content.Context;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.marijus.enduiprototype.ContentFragment;
 import com.example.marijus.enduiprototype.R;
 import com.example.marijus.enduiprototype.products.PlaceholderProduct;
 import com.example.marijus.enduiprototype.products.Product;
@@ -32,7 +30,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
 
-        View productView = inflater.inflate(R.layout.item_view, parent, false);
+        View productView = inflater.inflate(R.layout.product_item_view, parent, false);
         //View productView = inflater.inflate(R.layout.grid_view, parent, false);
 
         return new ViewHolder(productView);

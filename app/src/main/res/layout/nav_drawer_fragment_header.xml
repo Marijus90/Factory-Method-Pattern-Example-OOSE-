@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout	xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="192dp"
-    android:background="@color/colorBlack"
+    android:layout_height="@dimen/header_height"
+    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <TextView
@@ -15,7 +15,7 @@
         android:paddingLeft="16dp"
         android:text="@string/drawer"
         android:textColor="@color/colorWhite"
-        android:textSize="14sp"
+        android:textSize="@dimen/nav_drawer_header_text_size"
         android:textStyle="bold" />
 
     <TextView
@@ -29,6 +29,6 @@
         android:paddingLeft="18dp"
         android:text="@string/pick_page"
         android:textColor="@color/colorWhite"
-        android:textSize="14sp" />
+        android:textSize="@dimen/nav_drawer_header_text_size" />
 
 </RelativeLayout>

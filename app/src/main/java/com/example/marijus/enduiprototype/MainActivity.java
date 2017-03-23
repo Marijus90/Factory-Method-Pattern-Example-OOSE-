@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     private List<PlaceholderProduct> buildProductList() {
         ArrayList<PlaceholderProduct> products = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             products.add(new RetroJordans());
             products.add(new GymTrainers());
         }
