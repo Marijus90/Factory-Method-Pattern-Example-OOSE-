@@ -31,7 +31,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         LayoutInflater inflater = LayoutInflater.from(context);
 
         View productView = inflater.inflate(R.layout.product_item_view, parent, false);
-        //View productView = inflater.inflate(R.layout.grid_view, parent, false);
 
         return new ViewHolder(productView);
     }
@@ -53,12 +52,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     @Override
     public int getItemCount() {
         return products.size();
-    }
-
-    public void removeItem(int position) {
-        products.remove(position);
-        notifyItemRemoved(position);
-        notifyItemRangeChanged(position, products.size());
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

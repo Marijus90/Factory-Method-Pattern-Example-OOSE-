@@ -28,5 +28,4 @@
     <dimen name="dialog_title_height">128dp</dimen>
     <dimen name="dialog_message_padding">24dp</dimen>
     <dimen name="nav_drawer_header_text_size">14sp</dimen>
-
 </resources>
