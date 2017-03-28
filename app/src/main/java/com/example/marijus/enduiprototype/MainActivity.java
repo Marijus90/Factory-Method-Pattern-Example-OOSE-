@@ -1,5 +1,6 @@
 package com.example.marijus.enduiprototype;
 
+import android.os.AsyncTask;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -43,7 +44,9 @@ public class MainActivity extends AppCompatActivity {
         setupDrawerLayoutNavigationView(drawerLayout);
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        List<PlaceholderProduct> products = buildProductList();
+        buildProductListTask task = new buildProductListTask();
+        task.execute();
+        List<PlaceholderProduct> products = task.getProducts();
         adapter = new DataAdapter(products);
 
         recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
@@ -51,13 +54,22 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
     }
 
-    private List<PlaceholderProduct> buildProductList() {
-        ArrayList<PlaceholderProduct> products = new ArrayList<>();
-        for (int i = 0; i < 6; i++) {
-            products.add(new RetroJordans());
-            products.add(new GymTrainers());
+    private class buildProductListTask extends AsyncTask<String, Void, String> {
+
+        List<PlaceholderProduct> products = new ArrayList<>();
+
+        @Override
+        protected String doInBackground(String... params) {
+                for (int i = 0; i < 12; i++) {
+                    products.add(new RetroJordans());
+                    products.add(new GymTrainers());
+                }
+            return null;
         }
-        return products;
+
+        public List<PlaceholderProduct> getProducts() {
+            return products;
+        }
     }
 
     private void displayDrawerLayout(Toolbar toolbar, DrawerLayout drawerLayout) {
@@ -93,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     case R.id.clothing:
                         openTemporaryFragment();
+                        displayShortToast("Clothing clicked");
                         return true;
                     case R.id.latest:
                         openTemporaryFragment();
