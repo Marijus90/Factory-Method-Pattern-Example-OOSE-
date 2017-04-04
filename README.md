@@ -1,7 +1,8 @@
 # Test UI Prototype
 
-The aim of the project was to build a UI prototype for an e-commerce Android app in very short time
+The aim of the project was to build a UI prototype for an e-commerce Android app in one day
 
+### UI is being redesigned and project will be updated soon...
 
 ### hdpi device
 
