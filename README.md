@@ -1,4 +1,4 @@
-# Factory Method Pattern Example (OOSE)
+# Factory Method Design Pattern Example (OOSE)
 
 ### License
 GNU AGPL-v3
