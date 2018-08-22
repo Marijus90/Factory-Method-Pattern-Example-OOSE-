@@ -1,6 +1,4 @@
-# Test UI Prototype
-
-The aim of the project was to build a UI prototype for an e-commerce Android app in one day
+# Factory Method Pattern Example (OOSE)
 
 ### License
 GNU AGPL-v3
